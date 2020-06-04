@@ -2,7 +2,7 @@ function [amp, ind] = QRS_fiducial_marks(ecg_h,ecg_m,fs)
 
 [pks,locs] = findpeaks(ecg_m,'MINPEAKDISTANCE',round(0.2*fs));
 
-%% Step 1 - Initialize 
+%% Step 1 - Initialize
 
 count = 0;           
 selectedRR = 0;
@@ -10,7 +10,7 @@ meanRR = 0;
 ser_back = 0;
 lengthPks = length(pks);
 
-% Save QRS for Sig and Filtered Sig 
+% Save QRS for Sig and Filtered Sig
 qrs_c = zeros(1,lengthPks);           % amplitude of R
 qrs_i = zeros(1,lengthPks);           % Index
 ind = zeros(1,lengthPks);             % amplitude of R
