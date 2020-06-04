@@ -6,7 +6,6 @@
 %The WFDB Toolbox provides access from MATLAB to WQRS applications 
 %in the WFDB Software Package in Physionet website.
 
-
 clear all;
 clc;
 
